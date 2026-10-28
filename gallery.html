@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gallery of Top Comet Oversea Employment Agency — training, departure events, office facilities and successful placements.">
+<title>Gallery · Top Comet Oversea Employment Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="Top Comet home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M3 20.5 20 4l-6.2 16-3.1-6.7L3 20.5Z" fill="#fff" fill-opacity=".95"/>
+          <circle cx="20.2" cy="3.8" r="2.3" fill="#9FC2EF"/>
+        </svg>
+      </span>
+      <span class="brand-copy"><strong>TOP COMET</strong><small>Oversea Employment Agency</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="profile.html">Company Profile</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section-tint" id="gallery">
+    <div class="wrap">
+      <p class="eyebrow">Gallery</p>
+      <h2 class="section-title">Our Work in Pictures</h2>
+      <p class="section-lede">Training, departures, our office, and workers now placed abroad. Click any photo to view it large.</p>
+      <div class="gallery-grid">
+        <figure class="g-item wide" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/departure.jpg" alt="Departure event — workers waving goodbye at the airport"></div>
+          <figcaption class="g-cap"><b>Departure Event</b><span>Send-off ceremony for workers leaving for their new jobs abroad</span></figcaption>
+        </figure>
+        <figure class="g-item" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/training.jpg" alt="Pre-departure training classroom"></div>
+          <figcaption class="g-cap"><b>Candidate Training</b><span>Pre-departure orientation and language preparation</span></figcaption>
+        </figure>
+        <figure class="g-item" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/office.jpg" alt="Top Comet office reception"></div>
+          <figcaption class="g-cap"><b>Our Office</b><span>Agency facilities at Ahlone Township, Yangon</span></figcaption>
+        </figure>
+        <figure class="g-item" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/placement.jpg" alt="Worker successfully placed in an overseas hotel"></div>
+          <figcaption class="g-cap"><b>Successful Placement</b><span>One of our workers on duty at a partner hotel overseas</span></figcaption>
+        </figure>
+        <figure class="g-item" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/interview.jpg" alt="Employer interview session"></div>
+          <figcaption class="g-cap"><b>Employer Interview</b><span>Direct hiring sessions held at our office</span></figcaption>
+        </figure>
+        <figure class="g-item" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/about.jpg" alt="Top Comet agency team"></div>
+          <figcaption class="g-cap"><b>Our Team</b><span>The people behind every successful placement</span></figcaption>
+        </figure>
+        <figure class="g-item" onclick="openLb(this)">
+          <div class="g-frame"><img src="images/hero.jpg" alt="Myanmar professionals at the airport"></div>
+          <figcaption class="g-cap"><b>Ready for the Journey</b><span>Skilled professionals beginning their overseas careers</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="lightbox" onclick="this.classList.remove('open')"><img id="lbImg" src="" alt="Gallery preview"></div>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <a class="footer-brand" href="index.html">TOP COMET<span>OVERSEA EMPLOYMENT AGENCY</span></a>
+    <p>© <span id="year"></span> Top Comet Oversea Employment Agency · Yangon, Myanmar. All rights reserved.</p>
+    <div style="display:flex;gap:9px;">
+      <a href="https://www.facebook.com/share/19Qhs62VVG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M13.5 21v-7.2h2.4l.4-2.8h-2.8V9.2c0-.8.2-1.4 1.4-1.4h1.5V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v2.8h2.5V21h3Z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@hotc26?_r=1&_t=ZS-9AmgKfdoAo4" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v3c-1.5 0-2.9-.5-3.9-1.3v6.3c0 3.7-2.5 6.1-5.8 6.1-3.1 0-5.3-2.2-5.3-5.1 0-3 2.4-5.2 5.6-5.1v3.1c-1.5-.2-2.6.7-2.6 2 0 1.2.9 2.1 2.2 2.1 1.5 0 2.6-1.1 2.6-3V3h3.3Z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
